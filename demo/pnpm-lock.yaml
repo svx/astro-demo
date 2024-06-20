@@ -11,6 +11,12 @@ dependencies:
   '@astrojs/starlight':
     specifier: ^0.24.3
     version: 0.24.3(astro@4.10.3)
+  '@expressive-code/plugin-collapsible-sections':
+    specifier: ^0.35.3
+    version: 0.35.3
+  '@expressive-code/plugin-line-numbers':
+    specifier: ^0.35.3
+    version: 0.35.3
   astro:
     specifier: ^4.10.2
     version: 4.10.3(typescript@5.4.5)
@@ -707,8 +713,20 @@ packages:
       unist-util-visit-parents: 6.0.1
     dev: false
 
+  /@expressive-code/plugin-collapsible-sections@0.35.3:
+    resolution: {integrity: sha512-UvinhyQGQ93ZrwZhxzkCqQYS1HkiJ3OOIcqKOUiEZnH26bSck2EehrXBLHxh0TuAnSfCwbC8H1QB1CAX3G2G1Q==}
+    dependencies:
+      '@expressive-code/core': 0.35.3
+    dev: false
+
   /@expressive-code/plugin-frames@0.35.3:
     resolution: {integrity: sha512-QYytMq6IsaHgTofQ5b6d+CnbxkqLdikSF2hC+IL/ZZwPYHYZoUlmjIwmJZhY4/hHqJGELrtZsyVdlt06RntgmA==}
+    dependencies:
+      '@expressive-code/core': 0.35.3
+    dev: false
+
+  /@expressive-code/plugin-line-numbers@0.35.3:
+    resolution: {integrity: sha512-VzEcJ6yPaix19x4Q9ih237AGPxZuN+tNUroA2AoXedJ+fQD+frdY83/xKafRrbTqd3PeTnJj9CgXCxmwkbHFkQ==}
     dependencies:
       '@expressive-code/core': 0.35.3
     dev: false

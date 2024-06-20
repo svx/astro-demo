@@ -1,0 +1,134 @@
+---
+title: About
+description: This is a page in my Starlight-powered site
+sidebar:
+  # Uses the default variant matching your site’s accent color
+  badge: New
+lastUpdated: 2022-08-09
+banner:
+  content: |
+    We just launched something cool!
+    <a href="https://example.com">Check it out</a>
+hero:
+  title: 'My Project: Stellar Stuff Sooner'
+  tagline: Take your stuff to the moon and back in the blink of an eye.
+head:
+  # Use a custom <title> tag
+  - tag: title
+    content: About
+---
+
+## Introduction
+
+All of this is super cool!
+
+import { Aside } from '@astrojs/starlight/components';
+
+<Aside>A default aside without a custom title.</Aside>
+
+<Aside type="caution" title="Watch out!">
+  A warning aside *with* a custom title.
+</Aside>
+
+<Aside type="tip">
+
+Other content is also supported in asides.
+
+```js
+// A code snippet, for example.
+```
+
+</Aside>
+
+<Aside type="danger">Do not give your password to anyone.</Aside>
+
+---
+
+import { Badge } from '@astrojs/starlight/components';
+
+<Badge text="New" variant="tip" size="small" />
+<Badge text="Deprecated" variant="caution" size="medium" />
+<Badge text="Starlight" variant="note" size="large" />
+<Badge text="Custom" variant="success" style={{ fontStyle: 'italic' }} />
+
+---
+
+import { Icon } from '@astrojs/starlight/components';
+
+<Icon name="star" color="goldenrod" size="2rem" />
+<Icon name="rocket" color="var(--sl-color-text-accent)" />
+
+---
+
+## Steps
+
+import { Steps } from '@astrojs/starlight/components';
+
+<Steps>
+
+1. Import the component into your MDX file:
+
+   ```js
+   import { Steps } from '@astrojs/starlight/components';
+   ```
+
+2. Wrap `<Steps>` around your ordered list items.
+
+</Steps>
+
+
+
+---
+
+## File Tree
+
+import { FileTree } from '@astrojs/starlight/components';
+
+<FileTree>
+
+- astro.config.mjs an **important** file
+- package.json
+- README.md
+- src
+  - components
+    - **Header.astro**
+  - …
+- pages/
+
+</FileTree>
+
+---
+
+import { Card, CardGrid } from '@astrojs/starlight/components';
+
+<Card title="Check this out">Interesting content you want to highlight.</Card>
+
+<CardGrid>
+  <Card title="Stars" icon="star">
+    Sirius, Vega, Betelgeuse
+  </Card>
+  <Card title="Moons" icon="moon">
+    Io, Europa, Ganymede
+  </Card>
+</CardGrid>
+
+<CardGrid>
+  <LinkCard title="Authoring Markdown" href="/guides/authoring-content/" />
+  <LinkCard title="Components" href="/guides/components/" />
+</CardGrid>
+
+---
+
+import { LinkCard } from '@astrojs/starlight/components';
+
+<LinkCard
+  title="Customizing Starlight"
+  description="Learn how to make your Starlight site your own with custom styles, fonts, and more."
+  href="/guides/customization/"
+/>
+
+---
+
+
+
+

@@ -67,3 +67,16 @@ pnpm add sharp
 cd demo
 yarn dev
 ```
+
+## Setup
+
+### Code
+
+#### Line Numbers
+
+- https://expressive-code.com/plugins/line-numbers/
+
+#### Collapsible Sections
+
+- https://expressive-code.com/plugins/collapsible-sections/
+
