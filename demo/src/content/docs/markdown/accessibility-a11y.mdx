@@ -1,0 +1,37 @@
+---
+title: Accessibility A11Y
+description: Improve the accessibility.
+meta:
+  - name: "og:description"
+    content: A11Y
+  - name: keywords
+    content: A11Y
+tags:
+  - A11Y
+---
+
+import { Aside } from '@astrojs/starlight/components';
+
+<Aside type="tip" title="Background Info">
+
+Improve the accessibility as documented by the [A11Y](https://a11yproject.com) project.
+
+</Aside>
+
+## Alternative text
+
+Add an alternative text for images.
+
+**Correct** code for this rule:
+
+```markdown showLineNumbers=false
+![Guillotina icon](https://guillotina.readthedocs.io/en/latest/_static/img/logo.svg)
+```
+
+**Incorrect** code for this rule:
+
+```markdown showLineNumbers=false
+![][Guillotina]
+
+[Guillotina]: https://guillotina.readthedocs.io/en/latest/_static/img/logo.svg
+```

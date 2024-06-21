@@ -17,7 +17,8 @@ export default defineConfig({
 				src: './src/assets/ocld-logo.png',
 			  },
 			expressiveCode: {
-				themes: ['dracula', 'github-light'],
+				themes: ['dracula', 'starlight-light'],
+				//styleOverrides: { codeBackground: '#f6f8fa' },
 				plugins: [pluginLineNumbers(),pluginCollapsibleSections()],
 			  },
 			  customCss: [
@@ -27,7 +28,6 @@ export default defineConfig({
 			sidebar: [
 				{
 					label: 'Start Here',
-					badge: 'New',
 					items: [
 						// Each item here is one entry in the navigation menu.
 						{ label: 'About', link: '/about/' },
@@ -39,6 +39,18 @@ export default defineConfig({
 					label: 'Custom',
 					// Autogenerate a group of links for the 'constellations' directory.
 					autogenerate: { directory: 'custom' },
+				},
+				{
+					label: 'Editorial',
+					badge: 'New',
+					// Autogenerate a group of links for the 'constellations' directory.
+					autogenerate: { directory: 'editorial' },
+				},
+				{
+					label: 'Markdown',
+					badge: 'New',
+					// Autogenerate a group of links for the 'constellations' directory.
+					autogenerate: { directory: 'markdown' },
 				},
 				{
 					label: 'Guides',
