@@ -80,3 +80,10 @@ yarn dev
 
 - https://expressive-code.com/plugins/collapsible-sections/
 
+## Breadcrumbs
+
+- https://docs.astro-breadcrumbs.kasimir.dev/start-here/getting-started/
+
+```shell
+pnpm add astro-breadcrumbs
+```

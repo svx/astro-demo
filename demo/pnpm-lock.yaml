@@ -20,6 +20,9 @@ dependencies:
   astro:
     specifier: ^4.10.2
     version: 4.10.3(typescript@5.4.5)
+  astro-breadcrumbs:
+    specifier: ^2.3.1
+    version: 2.3.1(astro@4.10.3)
   sharp:
     specifier: ^0.33.4
     version: 0.33.4
@@ -1473,6 +1476,14 @@ packages:
   /astring@1.8.6:
     resolution: {integrity: sha512-ISvCdHdlTDlH5IpxQJIex7BWBywFWgjJSVdwst+/iQCoEYnyOaQ95+X1JGshuBjGp6nxKUy1jMgE3zPqN7fQdg==}
     hasBin: true
+    dev: false
+
+  /astro-breadcrumbs@2.3.1(astro@4.10.3):
+    resolution: {integrity: sha512-9SUAGZiUP9iCnYOdtngZpHk1Fyge78T3tR7QR1mdx5qjOv1jIGXxtqCdxL84rMJsxgGg+NEI72rb1lK7AeCb+w==}
+    peerDependencies:
+      astro: ^2.0.0-beta.0 || ^3.0.0 || ^4.0.0
+    dependencies:
+      astro: 4.10.3(typescript@5.4.5)
     dev: false
 
   /astro-expressive-code@0.35.3(astro@4.10.3):

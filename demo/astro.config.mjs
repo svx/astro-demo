@@ -8,9 +8,14 @@ export default defineConfig({
 	integrations: [
 		starlight({
 			title: 'Demo Docs',
+			description: 'OCLD Demo Docs ',
+			lastUpdated: true,
 			social: {
 				github: 'https://github.com/withastro/starlight',
 			},
+			logo: {
+				src: './src/assets/ocld-logo.png',
+			  },
 			expressiveCode: {
 				themes: ['dracula', 'github-light'],
 				plugins: [pluginLineNumbers(),pluginCollapsibleSections()],
