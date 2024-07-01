@@ -36,7 +36,7 @@ Plone is fun!
 
 **:thumbsdown: Incorrect** code for this rule:
 
-::: tip Note
+:::note
 The `»` character represents a tab.
 :::
 
@@ -66,7 +66,7 @@ and [no-missing-blank-lines](https://github.com/remarkjs/remark-lint/tree/master
 
 <!--lint enable-->
 
-::: tip Note
+:::note
 The `¬` character represents a line break.
 :::
 
@@ -167,7 +167,7 @@ Do not use trailing space to generate a line break, use flowing text style or a 
 
 > remark-lint: [hard-break-spaces](https://github.com/remarkjs/remark-lint/tree/master/packages/remark-lint-hard-break-spaces "Link to remarkjs docs")
 
-::: tip Note
+:::note
 The `·` character represents a space and the `¬` character represents a line break.
 :::
 

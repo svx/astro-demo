@@ -127,8 +127,8 @@ Make sure that there are no other characters (including spaces) in front of head
 # One
 ```
 
-::: tip Note
-Note: The `·` character represents a space character.
+:::note
+The `·` character represents a space character.
 :::
 
 **:thumbsdown: Incorrect** code for this rule:

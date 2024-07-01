@@ -259,7 +259,7 @@ Never indent tables.
 
 **:thumbsdown: Incorrect** code for this rule:
 
-::: tip Note
+:::note
 The `·` character represents a space.
 :::
 

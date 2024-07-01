@@ -18,8 +18,8 @@ tags:
 
 # Horizontal Rules
 
-::: tip When to use
-:bulb: Horizontal rules can be used to separate sections when headers are not applicable or
+:::tip[When to use]
+Horizontal rules can be used to separate sections when headers are not applicable or
 to separate base document elements like a header, body and footer.
 :::
 

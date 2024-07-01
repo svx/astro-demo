@@ -25,7 +25,7 @@ The summer is awesome!
 Swimming is great.
 ```
 
-::: tip Note
+:::note
 The `·` character represents a space.
 :::
 
