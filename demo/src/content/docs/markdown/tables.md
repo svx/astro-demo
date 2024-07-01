@@ -283,3 +283,17 @@ The `·` character represents a space.
 ·········| Frost   | Sparkling and frozen! |
 ·········| Snow    | Falling down!         |
 ```
+
+## Use reference style links
+
+Use reference style links in tables to keep the contents of each cell as short as possible. Include the link definitions immediately beneath the table (not at the end of the file) where readers can find them in context.
+
+```markdown
+| Fruit  | Attribute                    | Notes                          |
+| ------ | ---------------------------- | ------------------------------ |
+| Apple  | [Juicy][1], Firm, Sweet      | Apples keep doctors away.      |
+| Banana | [Convenient][2], Soft, Sweet | Actually, apes prefer mangoes. |
+
+[1]: https://SomeReallyReallyReallyReallyReallyReallyReallyReallyReallyReallyReallyReallyReallyReallyReallyReallyLongURL
+[2]: https://example.com/SomeDifferentReallyReallyReallyReallyReallyReallyReallyReallyLongQuery
+```
