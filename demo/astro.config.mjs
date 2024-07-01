@@ -53,6 +53,12 @@ export default defineConfig({
 					autogenerate: { directory: 'markdown' },
 				},
 				{
+					label: 'OpenAPI',
+					badge: 'New',
+					// Autogenerate a group of links for the 'constellations' directory.
+					autogenerate: { directory: 'oas' },
+				},
+				{
 					label: 'Guides',
 					items: [
 						// Each item here is one entry in the navigation menu.
