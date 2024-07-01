@@ -17,7 +17,7 @@ tags:
 
 ## File extension
 
-Always use `.md` file extension.
+Always use `.md` or `.mdx` as file extension.
 
 > remark-lint: [file-extension](https://github.com/remarkjs/remark-lint/tree/master/packages/remark-lint-file-extension "Link to remarkjs docs")
 
@@ -27,6 +27,12 @@ Always use `.md` file extension.
 install.md
 about.md
 faq.md
+```
+
+```markdown
+install.mdx
+about.mdx
+faq.mdx
 ```
 
 **:thumbsdown: Incorrect** code for this rule:

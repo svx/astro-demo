@@ -61,7 +61,18 @@ Explicitly declare the language for blocks containing code snippets, so that nei
 
 **:thumbsup: Correct** code for this rule:
 
-~~~
+THe first block needs to show a JS block as Markdown, so that the user can see the whole block in MD.
+
+```markdown
+import React, { PureComponent } from "react";
+
+class Awesome extends PureComponent {
+  // ...
+}
+
+export default Awesome;
+```
+
 ```js
 import React, { PureComponent } from "react";
 
@@ -71,7 +82,6 @@ class Awesome extends PureComponent {
 
 export default Awesome;
 ```
-~~~
 
 **:thumbsdown: Incorrect** code for this rule:
 
@@ -181,7 +191,6 @@ Use backtick characters `` ` `` for both blocks and inline code.
 
 **:thumbsup: Correct** code for this rule:
 
-~~~
 ```js
 import React, { PureComponent } from "react";
 class Awesome extends PureComponent {
@@ -189,7 +198,7 @@ class Awesome extends PureComponent {
 }
 export default Awesome;
 ```
-~~~
+
 
 **:thumbsdown: Incorrect** code for this rule:
 
@@ -222,3 +231,18 @@ Don't use it for
 - **Libraries** - for example [yafowil.plone](https://pypi.org/project/yafowil.plone/ "Plone Integration for YAFOWIL")
 - **Packages and modules** - for example [react-dom](https://www.npmjs.com/package/react-dom "Link to react-dom")
 <!--lint enable-->
+
+```js
+
+import React, { PureComponent } from "react";
+
+class Awesome extends PureComponent {
+
+  // ...
+
+}
+
+export default Awesome;
+
+```
+
