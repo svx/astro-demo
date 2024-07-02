@@ -1,7 +1,8 @@
 import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
-import { pluginLineNumbers } from '@expressive-code/plugin-line-numbers'
-import { pluginCollapsibleSections } from '@expressive-code/plugin-collapsible-sections'
+import { pluginLineNumbers } from '@expressive-code/plugin-line-numbers';
+import { pluginCollapsibleSections } from '@expressive-code/plugin-collapsible-sections';
+import starlightOpenAPI, { openAPISidebarGroups } from 'starlight-openapi';
 
 // https://astro.build/config
 export default defineConfig({
@@ -13,13 +14,23 @@ export default defineConfig({
 			social: {
 				github: 'https://github.com/withastro/starlight',
 			},
+			plugins: [
+				// Generate the OpenAPI documentation pages.
+				starlightOpenAPI([
+				  {
+				   base: 'api',
+				   label: 'Example API',
+				   schema: './openapi/train-travel-api-openapi-source.yaml',
+				  },
+				]),
+			  ],
 			logo: {
 				src: './src/assets/ocld-logo.png',
 			  },
 			expressiveCode: {
 				themes: ['dracula', 'starlight-light'],
 				//styleOverrides: { codeBackground: '#f6f8fa' },
-				plugins: [pluginLineNumbers(),pluginCollapsibleSections()],
+				//plugins: [pluginLineNumbers(),pluginCollapsibleSections()],
 			  },
 			  customCss: [
 				// Relative path to your custom CSS file
@@ -58,6 +69,8 @@ export default defineConfig({
 					// Autogenerate a group of links for the 'constellations' directory.
 					autogenerate: { directory: 'oas' },
 				},
+				// Add the generated sidebar group to the sidebar.
+				...openAPISidebarGroups,
 				{
 					label: 'Guides',
 					items: [
