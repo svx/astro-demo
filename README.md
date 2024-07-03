@@ -61,6 +61,16 @@ success Installed "create-astro@4.8.0" with binaries:
 pnpm add sharp
 ```
 
+#### pre-commit
+
+`pre-commit` is already included in the Nix flake, if you want to use it, do the following:
+
+```shell
+pre-commit install
+```
+
+For more information, check the `pre-commit` [docs](https://pre-commit.com/ "Link to pre-commit docs").
+
 ### Start the development server
 
 ```shell
@@ -87,3 +97,4 @@ yarn dev
 ```shell
 pnpm add astro-breadcrumbs
 ```
+

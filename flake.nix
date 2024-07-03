@@ -25,6 +25,7 @@
             vale
             #(yarn.override { nodejs = nodejs_20; })
             pnpm
+            pre-commit
             ];
 
           shellHook = ''

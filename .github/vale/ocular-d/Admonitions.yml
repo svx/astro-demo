@@ -1,0 +1,7 @@
+extends: existence
+message: 'Use <Aside /> for admonitions'
+level: warning
+ignorecase: false
+scope: raw
+raw:
+  - '(NOTE:|TIP:|(?<! )WARNING:|\*\*(Note?s|Warning|Tip):?\*\*)'

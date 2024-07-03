@@ -94,7 +94,6 @@ In examples that refer to several regions, use equivalent references—for examp
 | perimeter network   | demilitarized zone (DMZ) |
 |  stop responding    | hang                     |
 
-
 **Focus on people, not disabilities.**
 
 For example, talk about readers who are blind or have low vision and customers with limited dexterity.
