@@ -24,6 +24,7 @@
             nodejs
             vale
             #(yarn.override { nodejs = nodejs_20; })
+            yarn
             pnpm
             pre-commit
             ];
