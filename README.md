@@ -6,6 +6,8 @@ Astro Demo
 
 If created/copied local the *flake.nix* file to/as a new project, first thing to do is `git add flake.nix*`.
 
+> Before updating pre-commit with `pre-commit autoupdate`, make sure to run `nix-flake-update` and commit all files to git first!
+
 ### Installation
 
 > This is using `pnpm`!
@@ -70,6 +72,8 @@ pre-commit install
 ```
 
 For more information, check the `pre-commit` [docs](https://pre-commit.com/ "Link to pre-commit docs").
+
+> Before updating pre-commit with `pre-commit autoupdate`, make sure to run `nix-flake-update` and commit all files to git first!
 
 ### Start the development server
 

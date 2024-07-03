@@ -31,6 +31,7 @@
           shellHook = ''
           echo "Versions:"
           echo "Node: `${pkgs.nodejs_20}/bin/node --version`"
+          echo "Vale:"
           #exec zsh
           '';
         };
