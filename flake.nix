@@ -5,38 +5,25 @@
 
   outputs = { self, nixpkgs }:
     let
-      overlays = [
-        (final: prev: rec {
-          nodejs = prev.nodejs_20;
-          yarn = (prev.yarn.override { inherit nodejs; });
-          pnpm = prev.nodePackages.pnpm;
-        })
-      ];
       supportedSystems = [ "x86_64-linux" "aarch64-linux" "x86_64-darwin" "aarch64-darwin" ];
       forEachSupportedSystem = f: nixpkgs.lib.genAttrs supportedSystems (system: f {
-        pkgs = import nixpkgs { inherit overlays system; };
+        pkgs = import nixpkgs { inherit system; };
       });
     in
     {
       devShells = forEachSupportedSystem ({ pkgs }: {
         default = pkgs.mkShell {
           packages = with pkgs; [
-            nodejs
+            nodejs_20
+            nodePackages.pnpm
+            (yarn.override { nodejs = nodejs_20; })
             vale
-            #(yarn.override { nodejs = nodejs_20; })
-            yarn
-            pnpm
-            pre-commit
             ];
-
           shellHook = ''
-          echo "Versions:"
-          echo "Node: `${pkgs.nodejs_20}/bin/node --version`"
-          echo "Vale:"
-          #exec zsh
-          '';
+            echo "Node: `${pkgs.nodejs}/bin/node --version`"
+            echo "Vale: `vale -v | awk '{print $3}'`"
+        '';
         };
       });
     };
 }
-
